@@ -1,0 +1,138 @@
+/* pc  */
+@media (min-width: 1024px) {
+  .hide-on-pc {
+    display: none;
+  }
+  .footer-pc {
+      display: flex;
+      justify-content: space-between;
+  }
+}
+
+/* mobile and tablet  */
+
+@media (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+
+  .header__over {
+    padding: 10px 0 10px;
+  }
+  .header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .header__cart-icon {
+    padding: 7px 12px 25px;
+  }
+
+  .header__cart-view {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    padding: 0 calc((100% - 644px) / 2);
+    overflow: hidden;
+  }
+
+  .app__container {
+    margin-top: calc(var(--header-height) + var(--header-sort-bar-hight));
+  }
+  .header__sort-bar {
+    display: block;
+  }
+  .footer__policy-list {
+      justify-content: space-between;
+  }
+}
+
+/* tablet  */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+  :root {
+    --header-height: 80px;
+    --navbar-height: 0px;
+  }
+
+  .header__cart {
+    width: 80px;
+    text-align: right;
+  }
+
+  .footer__policy-list {
+      padding: 8px;
+}
+}
+
+/* mobile*/
+
+@media (max-width: 739px) {
+    :root {
+        --header-height: 56px;
+        --navbar-height: 0px;
+      }
+  .hide-on-mobile {
+    display: none;
+  }
+  .header__over {
+    justify-content: space-between;
+  }
+  .header__logo {
+    width: 120px;
+  }
+  .header__logo-img {
+    width: 120px;
+    fill: var(--white-color);
+}
+  .header__cart {
+    width: 70px;
+  }
+  .header__search {
+    position: fixed;
+    top: var(--header-height);
+    z-index: 1;
+    right: 0;
+    left: 0;
+    display: none;
+    box-shadow: 0 1px 2px rgba(0,0,0, 0.2);
+    height: var(--header-sort-bar-hight);
+    padding: 0 4px;
+  }
+  .header__cart-view {
+    display: none;
+  }
+
+  #header__cart-mobile:checked ~ .header__cart-view {
+    display: block;
+  }
+  .header__cart-icon:hover .header__cart-view {
+    display: none;
+  }
+  .app__content {
+    margin: 0 4px;
+  }
+  .panination-item__item {
+    margin: 0 16px;
+}
+.panination-item__link {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.footer {
+    padding: 16px;
+}
+.footer__info {
+    padding: 16px;
+}
+.footer__policy-list {
+    display: none;
+}
+}

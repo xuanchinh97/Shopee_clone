@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/logo_shoppe.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -19,26 +22,24 @@
 
 <body>
     <div class="app">
+
         <!-- header  -->
         <header class="header">
-            <div class="grid">
+            <div class="grid wide">
                 <!-- header__navbar -->
-                <nav class="header__navbar">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item--separate"> <a
-                                href="https://banhang.shopee.vn/" class="header__navbar-item-link underline"
-                                target="_blank">Kênh Người Bán</a> </li>
-                        <li class="header__navbar-item header--qr-hover header__navbar-item--separate"> <a
-                                href="https://shopee.vn/web" class="header__navbar-item-link underline"
-                                target="_blank">Tải ứng dụng</a>
+                        <li class="header__navbar-item header__navbar-item--separate"> <a href="#"
+                                class="header__navbar-item-link underline" target="_blank">Kênh Người Bán</a> </li>
+                        <li class="header__navbar-item header--qr-hover header__navbar-item--separate"> <a href="#"
+                                class="header__navbar-item-link underline" target="_blank">Tải ứng dụng</a>
                             <!-- qr khi hover vao -->
                             <div class="header__qr">
-
                                 <img src="./assets/img/qr_code_shoppe.png" alt="QR code" class="header__qr-img">
                                 <div class="header__img-apps">
-                                    <a href="" class="header__link_dowload"><img src="./assets/img/app_store.png"
+                                    <a href="#" class="header__link_dowload"><img src="./assets/img/app_store.png"
                                             alt="App Store Dowload" class="header__img-dowload"></a>
-                                    <a href="" class="header__link_dowload">
+                                    <a href="#" class="header__link_dowload">
                                         <img src="./assets/img/gg_play.png" alt="Google Play Dowload"
                                             class="header__img-dowload">
                                     </a>
@@ -57,7 +58,7 @@
                     </ul>
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header--notify-hover">
-                            <a href="" class="header__navbar-item-link underline">
+                            <a href="#" class="header__navbar-item-link underline">
                                 <i class="far fa-bell"></i> Thông báo</a>
                             <!-- notification khi hover  -->
                             <!-- empty notification  -->
@@ -72,10 +73,10 @@
                                 </div>
                                 <div class="notify-empty-btn">
                                     <div class="btn btn-primary empty-btn underline">
-                                        <a class="btn-primary-title" href="">Đăng ký</a>
+                                        <a class="btn-primary-title" href="#">Đăng ký</a>
                                     </div>
                                     <div class="btn btn-primary empty-btn underline">
-                                        <a class="btn-primary-title" href="">Đăng nhập</a>
+                                        <a class="btn-primary-title" href="#">Đăng nhập</a>
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +88,7 @@
                                 </header>
                                 <ul class="header__notify-list">
                                     <li class="header__notify-item">
-                                        <a href="" class="header_notify-link">
+                                        <a href="#" class="header_notify-link">
                                             <img src="./assets/img/notify/notify2.jpg" alt="notification"
                                                 class="header__notify-img">
                                             <div class="header__notify-info">
@@ -102,7 +103,7 @@
                                         </a>
                                     </li>
                                     <li class="header__notify-item">
-                                        <a href="" class="header_notify-link">
+                                        <a href="#" class="header_notify-link">
                                             <img src="./assets/img/notify/notify3.jpg" alt="notification"
                                                 class="header__notify-img">
                                             <div class="header__notify-info">
@@ -115,7 +116,7 @@
                                         </a>
                                     </li>
                                     <li class="header__notify-item">
-                                        <a href="" class="header_notify-link">
+                                        <a href="#" class="header_notify-link">
                                             <img src="./assets/img/notify/notify4.jpg" alt="notification"
                                                 class="header__notify-img">
                                             <div class="header__notify-info">
@@ -128,7 +129,7 @@
                                         </a>
                                     </li>
                                     <li class="header__notify-item">
-                                        <a href="" class="header_notify-link">
+                                        <a href="#" class="header_notify-link">
                                             <img src="./assets/img/notify/notify5.jpg" alt="notification"
                                                 class="header__notify-img">
                                             <div class="header__notify-info">
@@ -141,38 +142,38 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <footer class="header__notify-footer"><a href=""
+                                <footer class="header__notify-footer"><a href="#"
                                         class="underline header__notify-footer-btn">Xem tất cả</a></footer>
                             </div>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link underline">
+                            <a href="#" class="header__navbar-item-link underline">
                                 <i class="far fa-question-circle"></i> Trợ giúp</a>
                         </li>
                         <!-- not logged in -->
                         <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
-                            <a class="user_name" href="">Đăng ký</a>
+                            <a class="user_name" href="#">Đăng ký</a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--strong">
-                            <a class="user_name" href=""> Đăng nhập </a>
+                            <a class="user_name" href="#"> Đăng nhập </a>
                         </li> -->
 
                         <!-- user log in  -->
                         <li class="header__navbar-item header__navbar-user">
-                            <a href="" class="header__navbar-item-link header__navbar-user-link underline">
+                            <a href="#" class="header__navbar-item-link header__navbar-user-link underline">
                                 <img src="./assets/img/user_icon.jpg" alt="" class="user_icon">
                                 <span class="user_name header__navbar-item--strong">XuanChinh</span>
                             </a>
                             <div class="box-white header__navbar-user-menu">
                                 <ul class="user-menu__item">
                                     <li class="user-menu__link">
-                                        <a href="" class="underline">Tài khoản của tôi</a>
+                                        <a href="#" class="underline">Tài khoản của tôi</a>
                                     </li>
                                     <li class="user-menu__link">
-                                        <a href="" class="underline">Đơn mua</a>
+                                        <a href="#" class="underline">Đơn mua</a>
                                     </li>
                                     <li class="user-menu__link">
-                                        <a href="" class="underline">Đăng xuất</a>
+                                        <a href="#" class="underline">Đăng xuất</a>
                                     </li>
                                 </ul>
                             </div>
@@ -180,11 +181,42 @@
 
                     </ul>
                 </nav>
+
                 <!-- header__over  -->
                 <div class="header__over">
+                    <!-- header search mobile  -->
+                    <input type="checkbox" hidden id="mobile-list-checkbox">
+                    <input type="checkbox" hidden id="mobile-search-checkbox">
+                    <div class="header__mobile-btn  hide-on-tablet hide-on-pc ">
+                        <label for="mobile-list-checkbox" class="header__mobile-list">
+                            <i class="fas fa-list-ul header__mobile-list-icon "></i>
+                        </label>
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="fas fa-search header__header__mobile-search-icon"></i>
+                        </label>
+                    </div>
+                    <!-- header-mobile-list -->
+                    <label for="mobile-list-checkbox" class="header__mobile-box__overlay " title="header-box">
+                        <div class="header__mobile-box">
+                            <ul class="header__mobile-box-list">
+                                <li class="header__mobile-box-item">
+                                    <a href="#" class="header__mobile-box-link underline">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__mobile-box-item">
+                                    <a href="#" class="header__mobile-box-link underline">Đơn mua</a>
+                                </li>
+                                <li class="header__mobile-box-item">
+                                    <a href="#" class="header__mobile-box-link underline">Giỏ hàng</a>
+                                </li>
+                                <li class="header__mobile-box-item">
+                                    <a href="#" class="header__mobile-box-link underline">Đăng xuất  <i class="fas fa-sign-out-alt"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </label>
                     <!-- header__logo  -->
-                    <div class="header__logo">
-                        <a href="/" class="header__logo-link">
+                    <div class="header__logo hide-on-tablet">
+                        <a href="#" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
                                 <g fill-rule="evenodd">
                                     <path
@@ -198,7 +230,7 @@
                     <div class="header__search">
                         <div class="header__search-input">
                             <form action="" method="get">
-                                <input class="search-input" type="search" name="search" value=" " id=""
+                                <input class="search-input" type="search" name="search" value="" id=""
                                     placeholder="Tìm kiếm sản phẩm">
                                 <!-- history-search  -->
                                 <div class="header__search-history">
@@ -206,13 +238,13 @@
                                         Lịch sử tìm kiếm
                                     </div>
                                     <ul class="search-history__list">
-                                        <li class="search-history__item underline"><a class="underline" href="">300 bài
+                                        <li class="search-history__item underline"><a class="underline" href="#">300 bài
                                                 code thiếu nhi</a></li>
-                                        <li class="search-history__item underline"><a class="underline" href="">hack
+                                        <li class="search-history__item underline"><a class="underline" href="#">hack
                                                 book</a></li>
-                                        <li class="search-history__item underline"><a class="underline" href="">mì
+                                        <li class="search-history__item underline"><a class="underline" href="#">mì
                                                 tôm</a></li>
-                                        <li class="search-history__item underline"><a class="underline" href="">thuốc
+                                        <li class="search-history__item underline"><a class="underline" href="#">thuốc
                                                 giảm đau cột sống</a></li>
                                     </ul>
                                 </div>
@@ -244,7 +276,9 @@
                     </div>
                     <!-- header__cart  -->
                     <div class="header__cart">
-                        <a class="header__cart-icon" href="" target="_blank" rel="noopener noreferrer">
+                        <input type="checkbox" hidden id="header__cart-mobile">
+                        <label for="header__cart-mobile" class="header__cart-icon" href="#" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="fas fa-cart-plus"></i>
                             <!-- empty cart  -->
                             <!-- <div class="box-white header__cart-view">
@@ -293,18 +327,70 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </label>
+                        <div class="box-white header__cart-view">
+                            <div class="header__cart-header">
+                                <span class="header__cart-title">Sản phẩm mới thêm</sp>
+                            </div>
+                            <ul class="header__cart-list">
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/product/product1.jpg" alt="product photo"
+                                        class="header__cart-item__img">
+                                    <h5 class="header__cart-item__title">Chuột không dây thế hệ mới</h5>
+                                    <span class="header__car-item__price">200.000đ</span>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/product/product3.jpg" alt="product photo"
+                                        class="header__cart-item__img">
+                                    <h5 class="header__cart-item__title">Áo thun trơn cổ tròn đen trắng chất liệu
+                                        cotton nam nữ</h5>
+                                    <span class="header__car-item__price">150.000đ</span>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/product/product4.jpg" alt="product photo"
+                                        class="header__cart-item__img">
+                                    <h5 class="header__cart-item__title">Miếng dán skin/sticker thẻ ATM, chung cho
+                                        mọi ngân hàng</h5>
+                                    <span class="header__car-item__price">10.000đ</span>
+                                </li>
+                            </ul>
+                            <div class="header__cart-footer">
+                                <span class="header__cart-count-item">
+                                    Có 15 sản phẩm trong giỏ hàng
+                                </span>
+                                <div class="btn btn-primary underline ">
+                                    <div class="btn-primary-title">
+                                        Xem Giỏ Hàng
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <div class="header__sort-bar">
+                <ul class="header__sort-list">
+                    <li class="header__sort-item">
+                        <a href="#" class="header__sort-link underline">Liên quan</a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="#" class="header__sort-link underline">Mới nhất</a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="#" class="header__sort-link underline">Bán chạy</a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="#" class="header__sort-link underline">Giá</a>
+                    </li>
+                </ul>
+            </div>
         </header>
         <!-- content  -->
         <div class="app__container">
-            <div class="grid">
-                <div class="grid__row app__content">
+            <div class="grid wide">
+                <div class="row sm-gutter app__content">
 
-                    <div class="grid__column-2">
+                    <div class="col l-2 m-0 s-0">
                         <nav class="category">
                             <h3 class="category_-heading">
                                 <i class="fas fa-list category_-heading--icon"></i>
@@ -312,27 +398,27 @@
                             </h3>
                             <ul class="category-list">
                                 <li class="category-item category-item--active">
-                                    <a href="" class="category-item__link underline">
+                                    <a href="#" class="category-item__link underline">
                                         Điện Thoại
                                     </a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link underline">
+                                    <a href="#" class="category-item__link underline">
                                         Máy Tính Bảng
                                     </a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link underline">
+                                    <a href="#" class="category-item__link underline">
                                         Laptop
                                     </a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link underline">
+                                    <a href="#" class="category-item__link underline">
                                         Ipad
                                     </a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link underline">
+                                    <a href="#" class="category-item__link underline">
                                         Phụ Kiện Điện Thoại
                                     </a>
                                 </li>
@@ -340,8 +426,8 @@
                         </nav>
                     </div>
 
-                    <div class="grid__column-10">
-                        <div class="home-filter">
+                    <div class="col l-10 m-12 s-12">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">
                                 Sắp xếp theo
                             </span>
@@ -369,12 +455,12 @@
                                 <span class="home-filter__page-total">
                                     <span class="home-filter__page-curent">1</span>/14
                                 </span>
-                                <a href="" class="home-filter__page-control">
+                                <a href="#" class="home-filter__page-control">
                                     <div class="btn home-filter__page-btn--disable home-filter__page-btn">
                                         <i class="fas fa-angle-left"></i>
                                     </div>
                                 </a>
-                                <a href="" class="home-filter__page-control">
+                                <a href="#" class="home-filter__page-control">
                                     <div class="btn home-filter__page-btn">
                                         <i class="fas fa-angle-right"></i>
                                     </div>
@@ -383,13 +469,12 @@
                         </div>
 
                         <div class="shop__product">
-                            <div class="grid__row">
+                            <div class="row sm-gutter">
                                 <!-- product -item  -->
-                                <div class="grid__column-2-4">
-                                    <a href="" class="product-item">
+                                <div class="col l-2-4 m-3 s-6">
+                                    <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(https://cf.shopee.vn/file/2dd923298ba0685a2288af4ae443c51c_tn);">
-
                                         </div>
                                         <div class="product-item__left">
                                             <span>
@@ -468,8 +553,8 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
-                                    <a href="" class="product-item">
+                                <div class="col l-2-4 m-3 s-6">
+                                    <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(./assets/img/product/ip1.jpg);">
 
@@ -551,8 +636,8 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
-                                    <a href="" class="product-item">
+                                <div class="col l-2-4 m-3 s-6">
+                                    <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(./assets/img/product/ip2.jpg);">
 
@@ -634,8 +719,8 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
-                                    <a href="" class="product-item">
+                                <div class="col l-2-4 m-3 s-6">
+                                    <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(./assets/img/product/ip4.jpg);">
 
@@ -717,8 +802,8 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
-                                    <a href="" class="product-item">
+                                <div class="col l-2-4 m-3 s-6">
+                                    <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(./assets/img/product/ip5.jpg);">
 
@@ -800,8 +885,8 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
-                                    <a href="" class="product-item">
+                                <div class="col l-2-4 m-3 s-6">
+                                    <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(./assets/img/product/ip6.jpg);">
 
@@ -883,8 +968,8 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
-                                    <a href="" class="product-item">
+                                <div class="col l-2-4 m-3 s-6">
+                                    <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(./assets/img/product/ip2.jpg);">
 
@@ -966,8 +1051,8 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
-                                    <a href="" class="product-item">
+                                <div class="col l-2-4 m-3 s-6">
+                                    <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(./assets/img/product/ip4.jpg);">
 
@@ -1049,8 +1134,8 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
-                                    <a href="" class="product-item">
+                                <div class="col l-2-4 m-3 s-6">
+                                    <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(./assets/img/product/ip1.jpg);">
 
@@ -1131,8 +1216,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
-                                    <a href="" class="product-item">
+                                <div class="col l-2-4 m-3 s-6">
+                                    <a href="#" class="product-item">
                                         <div class="product-item__img"
                                             style="background-image: url(./assets/img/product/ip5.jpg);">
 
@@ -1220,18 +1305,18 @@
                         <div class="panination shop__product-panination">
                             <ul class="panination-list">
                                 <li class="panination-item__item">
-                                    <a href="" class="panination-item__link underline">
+                                    <a href="#" class="panination-item__link underline">
                                         <i class="fas fa-angle-left"></i>
                                     </a>
                                 </li>
                                 <li class="panination-item__item panination-item__item-current ">
-                                    <a href="" class="panination-item__link underline">1</a>
+                                    <a href="#" class="panination-item__link underline">1</a>
                                 </li>
                                 <li class="panination-item__item">
-                                    <a href="" class="panination-item__link underline">2</a>
+                                    <a href="#" class="panination-item__link underline">2</a>
                                 </li>
                                 <li class="panination-item__item">
-                                    <a href="" class="panination-item__link underline">
+                                    <a href="#" class="panination-item__link underline">
                                         <i class="fas fa-angle-right"></i>
                                     </a>
                                 </li>
@@ -1247,40 +1332,37 @@
 
         <!-- footer  -->
         <div class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
-                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+            <div class="grid wide">
+                <div class="row footer-pc">
+                    <div class="col l-2-4 m-3 s-6">
+                        <h3 class="footer-heading">hỏi đáp</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
-                                <a href="" class="footer__item__link underline">Trung Tâm Trợ Giúp</a>
+                                <a href="#" class="footer__item__link underline">Trung Tâm Trợ Giúp</a>
                             </li>
                             <li class="footer__item">
-                                <a href="" class="footer__item__link underline">Shopee Mail</a>
+                                <a href="#" class="footer__item__link underline">Shopee Mail</a>
                             </li>
                             <li class="footer__item">
-                                <a href="" class="footer__item__link underline">Hướng Dẫn Mua Hàng</a>
+                                <a href="#" class="footer__item__link underline">Hướng Dẫn Mua Hàng</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-3 s-6">
                         <h3 class="footer-heading">Về Shopee</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
-                                <a href="" class="footer__item__link underline">Giới Thiệu Về Shopee Việt Nam</a>
+                                <a href="#" class="footer__item__link underline">Giới Thiệu Về Shopee Việt Nam</a>
                             </li>
                             <li class="footer__item">
-                                <a href="" class="footer__item__link underline">Tuyển Dụng</a>
+                                <a href="#" class="footer__item__link underline">Tuyển Dụng</a>
                             </li>
                             <li class="footer__item">
-                                <a href="" class="footer__item__link underline">Điều Khoản Shopee</a>
+                                <a href="#" class="footer__item__link underline">Điều Khoản Shopee</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer-heading"></h3>
-                    </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-3 s-6">
                         <h3 class="footer-heading">kênh truyền thông</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -1300,67 +1382,72 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-3 s-6">
                         <h3 class="footer-heading">ứng dụng Shopee</h3>
                         <div class="footer__dowload">
                             <img src="./assets/img/qr_code_shoppe.png" alt="dowload QR code" class="footer__dowload-qr">
                             <div class="footer__dowload-apps">
-                                <a href="" class="footer__dowload-app__link">
-                                    <img src="./assets/img/gg_play.png" alt="dowload QR code" class="footer__dowload-app__img">
+                                <a href="#" class="footer__dowload-app__link">
+                                    <img src="./assets/img/gg_play.png" alt="dowload QR code"
+                                        class="footer__dowload-app__img">
                                 </a>
-                                <a href="" class="footer__dowload-app__link">
-                                    <img src="./assets/img/app_store.png" alt="dowload QR code" class="footer__dowload-app__img">                                    
+                                <a href="#" class="footer__dowload-app__link">
+                                    <img src="./assets/img/app_store.png" alt="dowload QR code"
+                                        class="footer__dowload-app__img">
                                 </a>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                </div>
-            </div>
-<div class="footer__bottom">
-    <div class="grid">
-        <div class="grid__row">
-            <div class="footer__info">
-                <ul class="footer__policy-list">
-                    <li class="footer__policy-item">
-                        <a href="" class="footer__policy-item__link underline">
-                            chính sách bảo mật
-                        </a>
-                    </li>
-                    <li class="footer__policy-item">
-                        <a href="" class="footer__policy-item__link underline">
-                            quy chế hoạt động
-                        </a>
-                    </li>
-                    <li class="footer__policy-item">
-                        <a href="" class="footer__policy-item__link underline">
-                            chính sách vận chuyển 
-                        </a>
-                    </li>
-                    <li class="footer__policy-item">
-                        <a href="" class="footer__policy-item__link underline">
-                            chính sách trả hàng và hoàn tiền
-                        </a>
-                    </li>
-                </ul>
-                <img class="footer__coppyright-img" src="./assets/img/copyright.png" alt="đã đăng kí bộ công thương">
-                <span class="footer__company-name">
-                    Công Ty TNHH Shopee Clone
-                </span>
-                <div>
-                    <p class="footer__company-info">Địa chỉ: số 20, ngõ 638, đường Láng, quận Đống Đa, thành phố Hà Nội</p>
-                    <p class="footer__company-info">Mã số doanh nghiệp 01088836670 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp làn đầu ngày 10/02/2015 </p>
-                    <h3 class="footer__copyright-text">
-                        <script>document.write(new Date().getFullYear())</script>-Power by 
-                        <span>XuanChinh</span>
-                    </h3>
-                </div>
 
             </div>
-    </div>
-</div>
+        </div>
+        <div class="footer__bottom">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="footer__info">
+                        <ul class="footer__policy-list s-0">
+                            <li class="footer__policy-item">
+                                <a href="#" class="footer__policy-item__link underline">
+                                    chính sách bảo mật
+                                </a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#" class="footer__policy-item__link underline">
+                                    quy chế hoạt động
+                                </a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#" class="footer__policy-item__link underline">
+                                    chính sách vận chuyển
+                                </a>
+                            </li>
+                            <li class="footer__policy-item">
+                                <a href="#" class="footer__policy-item__link underline">
+                                    chính sách trả hàng và hoàn tiền
+                                </a>
+                            </li>
+                        </ul>
+                        <img class="footer__coppyright-img" src="./assets/img/copyright.png"
+                            alt="đã đăng kí bộ công thương">
+                        <span class="footer__company-name">
+                            Công Ty TNHH Shopee Clone
+                        </span>
+                        <div>
+                            <p class="footer__company-info">Địa chỉ: số 20, ngõ 638, đường Láng, quận Đống Đa, thành phố
+                                Hà Nội</p>
+                            <p class="footer__company-info">Mã số doanh nghiệp 01088836670 do Sở Kế hoạch & Đầu tư TP Hà
+                                Nội cấp làn đầu ngày 10/02/2015 </p>
+                            <h3 class="footer__copyright-text">
+                                <script>document.write(new Date().getFullYear())</script>-Power by
+                                <span>XuanChinh</span>
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- modal layout -->
