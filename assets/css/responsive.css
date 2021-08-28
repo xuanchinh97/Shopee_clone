@@ -46,6 +46,10 @@
   .header__sort-bar {
     display: block;
   }
+  .product-item {
+    min-height: 360px;
+  }
+
   .footer__policy-list {
       justify-content: space-between;
   }
